@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:zxing="clr-namespace:ZXing.Net.Mobile.Forms;assembly=ZXing.Net.Mobile.Forms"
+             Title="QR Code Scanner"
+             x:Class="QRcodeGenerator.ScanPage">
+
+
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <!--Creating an info section to inform the user that they should scan under good lighting conditions-->
+            <ContentView Grid.Row="0" BackgroundColor="white">
+                <RelativeLayout>
+                    <StackLayout>
+                        <Label Text="Scan a QR code" TextColor="Black" FontSize="18" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                        <Label Text="Make sure you are scanning under good lighting conditions." TextColor="Gray" FontSize="14" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                    </StackLayout>
+                </RelativeLayout>
+            </ContentView>
+            <!--Creating a QR code scanner using the ZXing library-->
+            <zxing:ZXingScannerView Grid.Row="1" x:Name="scanView" OnScanResult="scanView_OnScanResult" IsScanning="True" WidthRequest="200" HeightRequest="300"/>
+            <!--A label to display the result of the scanned QR code-->
+            <Label x:Name="resultLabel" Grid.Row="2" Text="Result: " TextColor="Black" VerticalTextAlignment="Start"  HorizontalTextAlignment="Center" FontSize="18"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

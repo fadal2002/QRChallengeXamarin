@@ -1,0 +1,15 @@
+C:\Users\fadal\source\repos\QRcodeGenerator\QRcodeGenerator\QRcodeGenerator\bin\Debug\netstandard2.0\QRcodeGenerator.deps.json
+C:\Users\fadal\source\repos\QRcodeGenerator\QRcodeGenerator\QRcodeGenerator\bin\Debug\netstandard2.0\QRcodeGenerator.dll
+C:\Users\fadal\source\repos\QRcodeGenerator\QRcodeGenerator\QRcodeGenerator\bin\Debug\netstandard2.0\ref\QRcodeGenerator.dll
+C:\Users\fadal\source\repos\QRcodeGenerator\QRcodeGenerator\QRcodeGenerator\bin\Debug\netstandard2.0\QRcodeGenerator.pdb
+C:\Users\fadal\source\repos\QRcodeGenerator\QRcodeGenerator\QRcodeGenerator\obj\Debug\netstandard2.0\QRcodeGenerator.csprojAssemblyReference.cache
+C:\Users\fadal\source\repos\QRcodeGenerator\QRcodeGenerator\QRcodeGenerator\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\fadal\source\repos\QRcodeGenerator\QRcodeGenerator\QRcodeGenerator\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\fadal\source\repos\QRcodeGenerator\QRcodeGenerator\QRcodeGenerator\obj\Debug\netstandard2.0\QRcodeGenerator.AssemblyInfoInputs.cache
+C:\Users\fadal\source\repos\QRcodeGenerator\QRcodeGenerator\QRcodeGenerator\obj\Debug\netstandard2.0\QRcodeGenerator.AssemblyInfo.cs
+C:\Users\fadal\source\repos\QRcodeGenerator\QRcodeGenerator\QRcodeGenerator\obj\Debug\netstandard2.0\QRcodeGenerator.dll
+C:\Users\fadal\source\repos\QRcodeGenerator\QRcodeGenerator\QRcodeGenerator\obj\Debug\netstandard2.0\ref\QRcodeGenerator.dll
+C:\Users\fadal\source\repos\QRcodeGenerator\QRcodeGenerator\QRcodeGenerator\obj\Debug\netstandard2.0\QRcodeGenerator.pdb
+C:\Users\fadal\source\repos\QRcodeGenerator\QRcodeGenerator\QRcodeGenerator\obj\Debug\netstandard2.0\QRcodeGenerator.csproj.CoreCompileInputs.cache
+C:\Users\fadal\source\repos\QRcodeGenerator\QRcodeGenerator\QRcodeGenerator\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\fadal\source\repos\QRcodeGenerator\QRcodeGenerator\QRcodeGenerator\obj\Debug\netstandard2.0\ScanPage.xaml.g.cs

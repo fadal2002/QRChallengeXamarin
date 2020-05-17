@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:zxing="clr-namespace:ZXing.Net.Mobile.Forms;assembly=ZXing.Net.Mobile.Forms"
+             xmlns:zxcm="clr-namespace:ZXing.Common;assembly=zxing.portable"
+             mc:Ignorable="d"
+             x:Class="QRcodeGenerator.MainPage">
+
+    <!--Creating a navigation bar-->
+    <NavigationPage.TitleView>
+        <AbsoluteLayout VerticalOptions="CenterAndExpand">
+            <!--Title of the QR code generator page-->
+            <Label Text="QR Code Generator" FontSize="20" FontAttributes="Bold" TextColor="White"/>
+            <!--Button to navigate to the scanning section of the application-->
+            <Button Text="Scan" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0.95, 0, 70, 40" BackgroundColor="#5FA2EB" TextColor="White" Clicked="scan_Button_Clicked"/>
+        </AbsoluteLayout>
+       
+    </NavigationPage.TitleView>
+
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <!--Creating a QR code image using the ZXing library-->
+            <zxing:ZXingBarcodeImageView x:Name="QRImage" WidthRequest="300" HeightRequest="300" BarcodeValue="Default" BarcodeFormat="QR_CODE">
+                <!--Specifying the size of the generated QR code image-->
+                <zxing:ZXingBarcodeImageView.BarcodeOptions>
+                    <zxcm:EncodingOptions Width="300" Height="300" />
+                </zxing:ZXingBarcodeImageView.BarcodeOptions>
+            </zxing:ZXingBarcodeImageView>
+
+            <!--An entry box for the user to input the text that they want to convert-->
+            <Entry x:Name="QRTextEntry" Placeholder="Enter Text..."/>
+            <!--Button to generate the QR code of the inputted text-->
+            <Button Text="Generate QR code" Clicked="generate_Button_Clicked" BackgroundColor="Black" TextColor="White"/>
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>
